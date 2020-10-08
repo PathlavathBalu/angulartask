@@ -1,3 +1,4 @@
+
 ng-sidebar-container {
     height: 100vh;
 }
@@ -18,4 +19,9 @@ ng-sidebar-container {
 .menu li a {
     display: block;
     width: 100%;
+}
+.image {
+    height: 30px;
+    width: 30px;
+
 }

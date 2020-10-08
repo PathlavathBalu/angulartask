@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactService } from '../contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  public collection:any;
+  constructor(private contactService:ContactService) { }
 
   ngOnInit(): void {
+    this.contactService.getOrderList().subscribe((result) => {
+      this.collection = result;
+      console.log(this.collection);
+    });
   }
+
 
 }
