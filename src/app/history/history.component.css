@@ -1,0 +1,11 @@
+.order {
+    font-size: 12px;
+}
+.completed {
+    position: relative;
+}
+.com {
+    position: absolute;
+    top:-50%;
+    right: 0;
+}

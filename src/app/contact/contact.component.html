@@ -1,0 +1,19 @@
+
+<agm-map [latitude]="lat" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+<div class="m-5">
+  <h3 class=" border-bottom w-25">Find Us At:</h3>
+  <p class="order">{{address1}}, Edinburgh,EH142JT</p>
+  <div class="m-3">
+    <h3 class=" border-bottom w-25">Contact Us:</h3>
+    <p class="order">Phone:</p>
+    <p class="order">Email:</p>
+  </div>
+
+  <h3 class=" border-bottom w-25">Working Hours:</h3>
+  <div class="m-3" *ngFor="let workingHour of workingHours">
+    <p class="">{{workingHour}} </p>
+  </div>
+  <p>{{extraNotes}}</p>
+</div>
